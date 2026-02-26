@@ -1,0 +1,5 @@
+# Emoji Guesser - Project requirements
+# ------------------------------------
+# Frontend: Node.js 18+ and npm (see README for install and run).
+# Backend (when added): Python 3.x + Flask deps will be listed below.
+# flask>=3.0.0
