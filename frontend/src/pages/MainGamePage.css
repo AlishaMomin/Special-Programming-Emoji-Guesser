@@ -1,0 +1,287 @@
+.main-game-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+}
+
+.main-game-card {
+  width: 100%;
+  max-width: 720px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 1.5rem 1.5rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.main-game-progress {
+  margin-bottom: 1.25rem;
+}
+
+.main-game-progress-text {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.main-game-progress-subtext {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.main-game-progress-bar {
+  height: 5px;
+  background: var(--input-bg);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.main-game-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+  border-radius: 999px;
+  transition: width 0.35s ease-out;
+}
+
+.main-game-narrative {
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.main-game-narrative-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.main-game-selected {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.main-game-selected--compact {
+  margin: 0 0 1rem;
+}
+
+.main-game-selected-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.main-game-selected-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.main-game-chip {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  background: var(--input-bg);
+  border: 2px solid var(--input-border);
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.main-game-question {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.main-game-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.main-game-option {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--input-bg);
+  border: 2px solid var(--input-border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.main-game-option:hover {
+  border-color: var(--accent);
+  background: rgba(167, 139, 250, 0.12);
+}
+
+.main-game-option--selected {
+  border-color: var(--accent);
+  background: var(--avatar-selected);
+}
+
+/* ----- Reveal step: clean comparison + reasoning ----- */
+.main-game-reveal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.main-game-reveal-heading {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.main-game-reveal-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.main-game-reveal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem 1rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.main-game-reveal-card--you {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--card-border);
+}
+
+.main-game-reveal-card--ai {
+  background: rgba(167, 139, 250, 0.12);
+  border: 1px solid var(--accent);
+}
+
+.main-game-reveal-card-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.main-game-reveal-card-value {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.main-game-reveal-card--ai .main-game-reveal-card-value {
+  color: var(--accent-bright);
+}
+
+.main-game-reveal-feedback {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.main-game-reasoning-block {
+  padding: 1.25rem 1.25rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  border: 1px solid var(--card-border);
+}
+
+.main-game-reasoning-block-title {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-bright);
+}
+
+.main-game-reasoning-block-list {
+  margin: 0 0 1rem;
+  padding-left: 1.35rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.main-game-reasoning-block-list li {
+  margin-bottom: 0.4rem;
+}
+
+.main-game-reasoning-block-takeaway {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: rgba(167, 139, 250, 0.15);
+  border-radius: 10px;
+  border-left: 3px solid var(--accent);
+}
+
+.main-game-actions {
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.main-game-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: var(--font);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+}
+
+.main-game-btn--primary {
+  color: #1a0f2e;
+  background: linear-gradient(135deg, var(--accent-bright) 0%, var(--accent) 100%);
+  box-shadow: 0 4px 16px var(--accent-glow);
+}
+
+.main-game-btn--primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px var(--accent-glow);
+}
+
+.main-game-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
