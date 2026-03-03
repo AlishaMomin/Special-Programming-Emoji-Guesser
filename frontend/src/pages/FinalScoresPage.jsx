@@ -19,7 +19,7 @@ export default function FinalScoresPage({ players, warmUpScores, mainRoundScores
             </div>
             <div className="final-scores-row">
               <span>Main game</span>
-              <strong>{mainRoundScores?.[0] ?? 0}/6</strong>
+              <strong>{mainRoundScores?.[0] ?? 0}/4</strong>
             </div>
           </div>
           <div className="final-scores-player">
@@ -31,7 +31,7 @@ export default function FinalScoresPage({ players, warmUpScores, mainRoundScores
             </div>
             <div className="final-scores-row">
               <span>Main game</span>
-              <strong>{mainRoundScores?.[1] ?? 0}/6</strong>
+              <strong>{mainRoundScores?.[1] ?? 0}/4</strong>
             </div>
           </div>
         </div>

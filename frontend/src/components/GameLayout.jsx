@@ -54,13 +54,13 @@ export default function GameLayout({ players, currentPlayer, storyText, warmUpSc
                   <span className="rank">1</span>
                   <span className="lb-avatar">{p1?.avatar?.emoji}</span>
                   <span className="lb-name">{p1?.name ?? 'Player 1'}</span>
-                  <span className="lb-score">Starter: {warmUpScores?.[0] ?? 0}/5 · Main: {mainRoundScores?.[0] ?? 0}/6</span>
+                  <span className="lb-score">Starter: {warmUpScores?.[0] ?? 0}/5 · Main: {mainRoundScores?.[0] ?? 0}/4</span>
                 </li>
                 <li className="leaderboard-item leaderboard-item--you">
                   <span className="rank">2</span>
                   <span className="lb-avatar">{p2?.avatar?.emoji}</span>
                   <span className="lb-name">{p2?.name ?? 'Player 2'}</span>
-                  <span className="lb-score">Starter: {warmUpScores?.[1] ?? 0}/5 · Main: {mainRoundScores?.[1] ?? 0}/6</span>
+                  <span className="lb-score">Starter: {warmUpScores?.[1] ?? 0}/5 · Main: {mainRoundScores?.[1] ?? 0}/4</span>
                 </li>
               </ul>
             </div>

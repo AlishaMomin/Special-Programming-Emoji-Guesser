@@ -9,7 +9,7 @@ import {
 } from '../data/mainGameLogic'
 import './MainGamePage.css'
 
-const TOTAL_ROUNDS = 3
+const TOTAL_ROUNDS = 2
 const QUESTIONS_PER_ROUND = 2
 
 export default function MainGamePage({

@@ -66,10 +66,12 @@ export function getReasoningLevel3(breakdown, total, label) {
   }
 }
 
+/**
+ * Main game has 2 rounds only: 1 = Pattern Recognition, 2 = Classification.
+ */
 export function getReasoningForLevel(level, prediction) {
   const { breakdown, total, label } = prediction
-  if (level === 1) return getReasoningLevel1(breakdown)
-  if (level === 2) return getReasoningLevel2(breakdown, label)
+  if (level === 1) return getReasoningLevel2(breakdown, label)
   return getReasoningLevel3(breakdown, total, label)
 }
 
